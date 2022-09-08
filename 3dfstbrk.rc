@@ -1,0 +1,1497 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PageNumber DIALOGEX 0, 0, 177, 95
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "输入文件号"
+FONT 12, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PageNumber,118,26,37,14,ES_AUTOHSCROLL,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "好",IDOK,31,55,50,14
+    PUSHBUTTON      "取消",IDCANCEL,93,55,50,14
+    LTEXT           "输入要观看的炮的文件号：",IDC_STATIC,13,29,104,14,0,
+                    WS_EX_RIGHT
+END
+
+IDD_DialogShowTime DIALOGEX 0, 0, 157, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入起止绘制时间"
+FONT 12, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_BeginShowTime,88,21,38,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EndShowTime,88,41,38,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "好",IDOK,22,68,50,14
+    PUSHBUTTON      "取消",IDCANCEL,83,68,50,14
+    LTEXT           "起始绘制时间：",IDC_STATIC,24,23,62,16,0,WS_EX_RIGHT
+    LTEXT           "终止绘制时间：",IDC_STATIC,24,43,62,16,0,WS_EX_RIGHT
+END
+
+IDD_AskCalculateGroup DIALOGEX 0, 0, 175, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入起止计算文件号"
+FONT 12, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_BN,99,18,49,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EN,99,33,49,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "好",IDOK,31,56,50,14
+    PUSHBUTTON      "取消",IDCANCEL,95,56,50,14
+    LTEXT           "开始计算的文件号:",IDC_STATIC,20,20,74,12,0,WS_EX_RIGHT
+    LTEXT           "终止计算的文件号:",IDC_STATIC,21,35,72,12,0,WS_EX_RIGHT
+END
+
+IDD_DialogSvSys DIALOG DISCARDABLE  0, 0, 160, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入观测系统参数"
+FONT 12, "System"
+BEGIN
+    DEFPUSHBUTTON   "好",IDOK,31,156,36,14
+    PUSHBUTTON      "取消",IDCANCEL,91,156,36,14
+    RTEXT           "工区:",IDC_STATIC,0,10,120,10
+    RTEXT           "队号:",IDC_STATIC,0,22,120,10
+    RTEXT           "道距:",IDC_STATIC,0,35,120,13
+    RTEXT           "每束线中的接收线数目:",IDC_STATIC,0,48,120,13
+    RTEXT           "每束线中的炮点线数目:",IDC_STATIC,0,61,120,13
+    RTEXT           "炮线距:",IDC_STATIC,0,74,120,13
+    RTEXT           "小号方向检波点数:",IDC_STATIC,0,87,120,13
+    RTEXT           "大号方向检波点数:",IDC_STATIC,0,100,120,13
+    RTEXT           "小号方向偏移距:",IDC_STATIC,0,113,120,13
+    RTEXT           "大号方向偏移距: ",IDC_STATIC,0,126,120,13
+    RTEXT           "首炮点相对于首检波线的距离:",IDC_STATIC,0,139,120,13
+    EDITTEXT        IDC_Area,121,8,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Crew,121,21,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GroupInterval,121,34,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RecieveLineNumber,121,47,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ShotPointNumber,121,60,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ShotLineInterval,121,73,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GroupNumberOfSmallNumber,121,86,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GroupNumberOfBigNumber,121,99,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GapOfSmallNumber,121,112,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GapOfBigNumber,121,125,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FirstShotPointPosition,121,138,28,12,ES_AUTOHSCROLL
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  34, 22, 188, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于3DFSTBRK"
+FONT 12, "System"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,10,20,20
+    LTEXT           "三维大炮初至静校正软件包 1.0 版本",IDC_STATIC,40,10,119,
+                    8
+    LTEXT           "版权所有 1997.6.1 ",IDC_STATIC,40,21,122,8
+    DEFPUSHBUTTON   "好",IDOK,77,84,37,14,WS_GROUP
+    LTEXT           "物探局地调一处方法室",IDC_STATIC,40,33,122,8
+    LTEXT           "Telephone:0086-10-69211740-51425(Office)\n                  0086-10-69211740-51583(Home)\nEmail:FanHua@hotmail.com",
+                    IDC_STATIC,25,50,153,31
+END
+
+IDD_DialogRLISPI DIALOG DISCARDABLE  0, 0, 242, 225
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "输入检波点和炮点间距"
+FONT 12, "System"
+BEGIN
+    DEFPUSHBUTTON   "好",IDOK,60,204,50,14
+    PUSHBUTTON      "取消",IDCANCEL,132,204,50,14
+    GROUPBOX        "输入检波线间距",IDC_STATIC,4,4,230,96
+    GROUPBOX        "输入炮点线间距",IDC_STATIC,4,104,231,96
+    EDITTEXT        IDC_RLI1,12,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI2,34,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI3,56,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI4,78,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI5,100,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI6,122,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI7,144,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI8,166,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI9,188,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI10,210,17,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI11,12,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI12,34,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI13,56,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI14,78,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI15,100,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI16,122,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI17,144,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI18,166,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI19,188,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI20,210,33,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI21,12,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI22,34,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI23,56,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI24,78,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI25,100,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI26,122,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI27,144,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI28,166,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI29,188,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI30,210,49,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI31,12,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI32,34,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI33,56,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI34,78,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI35,100,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI36,122,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI37,144,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI38,166,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI39,188,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI40,210,65,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI41,12,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI42,34,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI43,56,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI44,78,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI45,100,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI46,122,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI47,144,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI48,166,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI49,188,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLI50,210,81,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI1,12,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI2,34,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI3,56,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI4,78,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI5,100,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI6,122,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI7,144,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI8,166,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI9,188,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI10,210,116,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI11,12,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI12,34,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI13,56,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI14,78,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI15,100,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI16,122,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI17,144,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI18,166,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI19,188,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI20,210,132,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI21,12,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI22,34,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI23,56,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI24,78,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI25,100,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI26,122,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI27,144,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI28,166,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI29,188,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI30,210,148,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI31,12,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI32,34,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI33,56,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI34,78,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI35,100,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI36,122,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI37,144,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI38,166,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI39,188,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI40,210,164,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI41,12,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI42,34,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI43,56,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI44,78,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI45,100,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI46,122,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI47,144,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI48,166,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI49,188,180,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPI50,210,180,21,12,ES_AUTOHSCROLL
+END
+
+IDD_DialogRLNSPN DIALOG DISCARDABLE  0, 0, 245, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "输入检波线炮点线名称"
+FONT 12, "System"
+BEGIN
+    DEFPUSHBUTTON   "好",IDOK,64,200,50,14
+    PUSHBUTTON      "取消",IDCANCEL,131,200,50,14
+    GROUPBOX        "输入检波线名称",IDC_STATIC,4,5,238,93
+    EDITTEXT        IDC_RLN1,12,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN2,34,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN3,56,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN4,78,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN5,100,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN6,122,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN7,144,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN8,166,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN9,188,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN10,210,17,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN11,12,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN12,34,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN13,56,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN14,78,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN15,100,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN16,122,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN17,144,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN18,166,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN19,188,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN20,210,32,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN21,12,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN22,34,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN23,56,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN24,78,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN25,100,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN26,122,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN27,144,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN28,166,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN29,188,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN30,210,48,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN31,12,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN32,34,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN33,56,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN34,78,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN35,100,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN36,122,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN37,144,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN38,166,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN39,188,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN40,210,64,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN41,12,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN42,34,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN43,56,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN44,78,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN45,100,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN46,122,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN47,144,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN48,166,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN49,188,80,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RLN50,210,80,22,12,ES_AUTOHSCROLL
+    GROUPBOX        "输入炮点线名称",IDC_STATIC,3,100,239,93
+    EDITTEXT        IDC_SPN1,12,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN2,34,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN3,56,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN4,78,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN5,100,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN6,122,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN7,144,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN8,166,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN9,188,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN10,210,112,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN11,12,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN12,34,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN13,56,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN14,78,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN15,100,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN16,122,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN17,144,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN18,166,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN19,188,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN20,210,127,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN21,12,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN22,34,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN23,56,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN24,78,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN25,100,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN26,122,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN27,144,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN28,166,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN29,188,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN30,210,143,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN31,12,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN32,34,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN33,56,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN34,78,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN35,100,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN36,122,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN37,144,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN38,166,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN39,188,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN40,210,159,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN41,12,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN42,34,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN43,56,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN44,78,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN45,100,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN46,122,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN47,144,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN48,166,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN49,188,175,22,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPN50,210,175,22,12,ES_AUTOHSCROLL
+END
+
+IDD_DialogSwathNumber DIALOG DISCARDABLE  0, 0, 143, 85
+STYLE DS_MODALFRAME | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "输入线束号"
+FONT 9, "Arial"
+BEGIN
+    EDITTEXT        IDC_EDIT1,85,21,29,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "好",IDOK,31,46,34,14
+    PUSHBUTTON      "取消",IDCANCEL,78,46,34,14
+    RTEXT           "请输入线束号:",IDC_STATIC,22,23,56,11
+END
+
+IDD_SPPFileMaker DIALOG DISCARDABLE  0, 0, 210, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "形成炮点参数文件"
+FONT 12, "System"
+BEGIN
+    CONTROL         "添加桩号",IDC_PlusPh,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,25,43,13
+    CONTROL         "由程序形成",IDC_PhByProgram,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,65,21,54,10
+    CONTROL         "由桩号文件形成:",IDC_PhByStaticData,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,65,33,69,10
+    CONTROL         "添加文件号",IDC_PlusFileNumber,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,53,70,13
+    CONTROL         "添加偏移距",IDC_PlusOffset,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,70,70,13
+    CONTROL         "添加空废炮桩号",IDC_PlusKF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,88,70,13
+    CONTROL         "添加接收道信息",IDC_PlusTrace,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,106,70,13
+    CONTROL         "添加坐标",IDC_PlusCor,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,122,70,13
+    EDITTEXT        IDC_PhFile,141,31,53,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FileNumberFile,141,53,53,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OffsetFile,141,70,53,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KFFile,141,88,53,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TraceFile,141,105,53,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_StaticDataFile,141,122,53,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "好",IDOK,41,143,50,14
+    PUSHBUTTON      "取消",IDCANCEL,119,143,50,14
+    LTEXT           "文件号文件名:",IDC_STATIC,86,55,55,12
+    GROUPBOX        "添加桩号",IDC_STATIC,13,13,184,35
+    LTEXT           "偏移距文件名:",IDC_STATIC,86,72,54,12
+    LTEXT           "空废炮文件名:",IDC_STATIC,86,90,55,12
+    LTEXT           "接收道文件名:",IDC_STATIC,86,108,55,12
+    LTEXT           "静校正文件名:",IDC_STATIC,86,124,55,12
+END
+
+IDD_SwathParameter DIALOGEX 0, 0, 184, 174
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "好",IDOK,31,153,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,153,50,14
+    LTEXT           "第一条炮线号:",IDC_STATIC,20,12,104,9,0,WS_EX_RIGHT
+    LTEXT           "最后一条炮线号:",IDC_STATIC,20,27,104,9,0,WS_EX_RIGHT
+    LTEXT           "小号起始解编点距炮点距离:",IDC_STATIC,20,42,104,9,0,
+                    WS_EX_RIGHT
+    LTEXT           "小号终止解编点距炮点距离:",IDC_STATIC,20,57,104,9,0,
+                    WS_EX_RIGHT
+    LTEXT           "大号起始解编点距炮点距离:",IDC_STATIC,20,72,104,9,0,
+                    WS_EX_RIGHT
+    LTEXT           "大号终止解编点距炮点距离:",IDC_STATIC,20,87,104,9,0,
+                    WS_EX_RIGHT
+    LTEXT           "第一个解编点的号码:",IDC_STATIC,20,102,104,9,0,
+                    WS_EX_RIGHT
+    LTEXT           "解方程时的折叠次数:",IDC_STATIC,20,117,104,9,0,
+                    WS_EX_RIGHT
+    LTEXT           "解方程所用的初始速度:",IDC_STATIC,20,132,104,9,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_ShotLineFrom,129,11,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ShotLineTo,129,26,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Distance1,129,41,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Distance2,129,56,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Distance3,129,71,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Distance4,129,86,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FirstRecievePointNumber,129,101,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FoldTime,129,116,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_InitialVelocity,129,131,32,12,ES_AUTOHSCROLL
+END
+
+IDD_ListBox DIALOGEX 0, 0, 75, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "列表"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "好",IDOK,14,131,20,14
+    PUSHBUTTON      "取消",IDCANCEL,40,131,20,14
+    LISTBOX         IDC_ListBox,16,35,42,87,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    CTEXT           "ListContent",IDC_ListContent,15,7,44,26
+END
+
+IDD_FrontCover DIALOG DISCARDABLE  0, 0, 217, 145
+STYLE DS_CENTER | WS_POPUP
+FONT 10, "System"
+BEGIN
+END
+
+IDD_CheckT DIALOGEX 0, 0, 200, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "检查成果"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "按炮线抽取",IDC_DrawOnShotLine,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,50,20,57,10
+    CONTROL         "按炮点线抽取",IDC_DrawOnShotPoint,"Button",
+                    BS_AUTORADIOBUTTON,112,20,63,10
+    CONTROL         "炮点",IDC_CheckShot,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,31,54,30,11
+    CONTROL         "检波点",IDC_CheckRecieve,"Button",BS_AUTORADIOBUTTON,31,
+                    71,41,12
+    EDITTEXT        IDC_ShotName,100,54,31,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RecieveName,100,72,31,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "好",IDOK,46,102,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,102,50,14
+    GROUPBOX        "炮点抽取方式",IDC_STATIC,20,8,160,27
+    GROUPBOX        "现在检查炮点还是检波点",IDC_STATIC,20,41,161,51
+    LTEXT           "线名：",IDC_STATIC,69,55,27,11,0,WS_EX_RIGHT
+    LTEXT           "线名：",IDC_STATIC,65,73,31,11,0,WS_EX_RIGHT
+    PUSHBUTTON      "列出...",IDC_ListShot,140,53,32,14,BS_VCENTER
+    PUSHBUTTON      "列出...",IDC_ListRecieve,140,72,32,13,BS_VCENTER
+END
+
+IDD_FH_PROGRESS DIALOGEX 0, 0, 221, 266
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,67,245,50,14
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    WS_BORDER,15,34,127,13
+    LTEXT           " 0 %",CG_IDC_PROGDLG_PERCENT,66,23,18,8
+    LTEXT           "",CG_IDC_PROGDLG_STATUS,7,14,139,8
+    EDITTEXT        IDC_Monitor,16,54,128,183,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL,
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "Total Value Number:",IDC_STATIC,153,42,52,17
+    EDITTEXT        IDC_nTotal,154,62,48,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Start Number:",IDC_STATIC,153,93,52,10
+    EDITTEXT        IDC_nStart,154,105,48,14,ES_AUTOHSCROLL
+    LTEXT           "End Number:",IDC_STATIC,152,130,52,10
+    EDITTEXT        IDC_nEnd,154,142,48,14,ES_AUTOHSCROLL
+END
+
+IDD_FbkShow DIALOG DISCARDABLE  0, 0, 164, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,92,50,14
+    RTEXT           "Start Shot Station :",IDC_STATIC,22,25,66,9
+    RTEXT           "End Shot Station :",IDC_STATIC,22,44,66,9
+    RTEXT           "Step :",IDC_STATIC,22,63,66,9
+    EDITTEXT        IDC_nStartStation,94,22,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nEndStation,94,41,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nStep,94,60,45,14,ES_AUTOHSCROLL
+END
+
+IDD_DlgMakeCoor DIALOG DISCARDABLE  0, 0, 188, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Plus Coordinates"
+FONT 9, "Arial"
+BEGIN
+    CONTROL         "Construct Theory Coor",IDC_MakeCoor,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,45,27,109,11
+    CONTROL         "Read From P190 File/nRead From P190 File",IDC_ReadP190,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,45,
+                    39,109,11
+    DEFPUSHBUTTON   "OK",IDOK,39,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,70,50,14
+END
+
+CG_IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 186, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,67,58,50,14
+    CONTROL         "Progress1",CG_IDC_PROGDLG_PROGRESS,"msctls_progress32",
+                    WS_BORDER,15,34,154,13
+    LTEXT           " 0 %",CG_IDC_PROGDLG_PERCENT,85,23,18,8
+    LTEXT           "",CG_IDC_PROGDLG_STATUS,13,7,158,8
+END
+
+IDD_AppendData DIALOG DISCARDABLE  0, 0, 162, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Append Data"
+FONT 9, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,19,96,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,96,50,14
+    RTEXT           "Rcv Line From:",IDC_STATIC,15,24,66,9
+    RTEXT           "Rcv Line To:",IDC_STATIC,15,38,66,9
+    RTEXT           "Rcv Point From:",IDC_STATIC,15,52,66,9
+    RTEXT           "Rcv Point To:",IDC_STATIC,15,66,66,9
+    EDITTEXT        IDC_RcvLineFrom,89,21,39,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RcvLineTo,89,36,39,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RcvPointFrom,89,51,39,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RcvPointTo,89,65,39,13,ES_AUTOHSCROLL
+END
+
+IDD_DialogRelation DIALOG DISCARDABLE  0, 0, 188, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ralative Calculation"
+FONT 9, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,38,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,122,50,14
+    RTEXT           "Modal Group(in Current Shot):",IDC_STATIC,25,16,100,12
+    LTEXT           "From:",IDC_STATIC,24,58,22,12
+    LTEXT           "To:",IDC_STATIC,92,59,15,12
+    GROUPBOX        "Calcualted Shot File Number",IDC_STATIC,19,46,151,34
+    EDITTEXT        IDC_nShotFrom,48,57,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nShotTo,114,57,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_nModalGroup,128,13,37,12,ES_AUTOHSCROLL
+    RTEXT           "Time Range Beside Break:",IDC_STATIC,25,31,100,12
+    EDITTEXT        IDC_nTimeRange,128,28,37,12,ES_AUTOHSCROLL
+    LTEXT           "From:",IDC_STATIC,24,93,22,12
+    LTEXT           "To:",IDC_STATIC,92,94,15,12
+    GROUPBOX        "Total Shot:",IDC_STATIC,19,81,151,34
+    EDITTEXT        IDC_nTotalShotFrom,48,92,37,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_nTotalShotTo,114,92,37,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件 (&File)"
+    BEGIN
+        MENUITEM "新文件(&New) ",               ID_FILE_NEW
+        MENUITEM "打开文件(&Open)",             ID_FILE_OPEN
+        MENUITEM "关闭文件(&Close)",            ID_FILE_CLOSE
+        MENUITEM "存储(&Save)\tCtrl+S",         ID_FILE_SAVE
+        MENUITEM "另存为(Save &As...)",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&Print...)\tCtrl+P",     ID_FILE_PRINT
+        MENUITEM "打印预显(Print Pre&view)",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(P&rint Setup...)",   ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件(Recent File)",       ID_FILE_MRU_FILE1, GRAYED
+        POPUP "建立起始文件(Initiate)"
+        BEGIN
+            MENUITEM "由每行52字节文件转换(From text file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROM52CHARACTARTEXTFILE
+
+            MENUITEM "由.DBF文件转换(From .DBF file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROMDBFFILE
+
+        END
+        MENUITEM "建立上交文件(Hand up)",       ID_FILE_MAKETEXTFILE
+        MENUITEM "退出(E&xit)",                 ID_APP_EXIT
+    END
+    POPUP "参数(&Parameter)"
+    BEGIN
+        MENUITEM "观测系统参数(Survey System)", ID_PARAMETER_SURVEYSYSTEM
+        MENUITEM "某一束线参数(One Swath)",     ID_PARAMETER_PARAMETEROFONESWATH
+
+        MENUITEM "炮点参数(Shot Point)",        ID_SPPIntegrate
+    END
+    POPUP "初至(&First Break)"
+    BEGIN
+        MENUITEM "解编数据处理(&Deal Unformed File)", IDM_UnformFileDeal
+        MENUITEM "计算模拟初至(Simulate)",      ID_FirstBreakSimulate
+        MENUITEM "计算高开华初至",              ID_MakeGKHFBD
+        MENUITEM "合并初至",                    ID_Fbk_Integrate
+    END
+    POPUP "方程(&Equation)"
+    BEGIN
+        MENUITEM "建立方程(Make Equation)",     ID_EQUATION_MAKEEQUATION
+        MENUITEM "求解方程(Resolve Equation)",  ID_EQUATION_RESOLVEEQUATION
+        POPUP "长波长控制(Long wave control)"
+        BEGIN
+            MENUITEM "&Make Net",                   ID_Equation_MakeNet
+            MENUITEM "&Control By Net",             ID_Equation_ControlByNet
+        END
+    END
+    POPUP "检查成果(&Check)"
+    BEGIN
+        MENUITEM "检查静校正量(Static Data)",   ID_MainCheckT
+        MENUITEM "&Check First Break File",     ID_FstBrkCheck
+        MENUITEM "&Append Outout Data",         ID_Output_Append
+    END
+    POPUP "视(&View)"
+    BEGIN
+        MENUITEM "工具条（&Toolbar）",          ID_VIEW_TOOLBAR
+        MENUITEM "状态条（&Status Bar）",       ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&Window)"
+    BEGIN
+        MENUITEM "新窗口(&New Window)",         ID_WINDOW_NEW
+        MENUITEM "层叠(&Cascade)",              ID_WINDOW_CASCADE
+        MENUITEM "平铺(&Tile)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&Arrange Icons)",    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "检索（&Index）",              ID_HELP_INDEX
+        MENUITEM "使用帮助（&Using Help）",     ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "关于本软件（&About 3dfstbrk...）", ID_APP_ABOUT
+    END
+END
+
+IDR_MenuFstBrk MENU DISCARDABLE 
+BEGIN
+    POPUP "文件 (&File)"
+    BEGIN
+        MENUITEM "新文件(&New) ",               ID_FILE_NEW
+        MENUITEM "打开文件(&Open)",             ID_FILE_OPEN
+        MENUITEM "关闭文件(&Close)",            ID_FILE_CLOSE
+        MENUITEM "存储(&Save)\tCtrl+S",         ID_FILE_SAVE
+        MENUITEM "另存为(Save &As...)",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&Print...)\tCtrl+P",     ID_FILE_PRINT
+        MENUITEM "打印预显(Print Pre&view)",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(P&rint Setup...)",   ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件(Recent File)",       ID_FILE_MRU_FILE1, GRAYED
+        POPUP "建立起始文件(Initiate)"
+        BEGIN
+            MENUITEM "由每行52字节文件转换(From text file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROM52CHARACTARTEXTFILE
+
+            MENUITEM "由.DBF文件转换(From .DBF file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROMDBFFILE
+
+        END
+        MENUITEM "建立上交文件(Hand up)",       ID_FILE_MAKETEXTFILE
+        MENUITEM "退出(E&xit)",                 ID_APP_EXIT
+    END
+    POPUP "浏览(C&heck)"
+    BEGIN
+        MENUITEM "到上一页(&Last Page)",        ID_FBLastPage
+        MENUITEM "到下一页(&Next Page)",        ID_FBNextPage
+        MENUITEM "到第一页(&First Page)",       ID_FBFirstPage
+        MENUITEM "到最后一页(&EndPage)",        ID_FBEndPage
+        MENUITEM "查找某一页(&Search Page)",    ID_FBSearchPage
+    END
+    POPUP "显示方式(&Show Type)"
+    BEGIN
+        MENUITEM "横向放大(&Fatter)",           ID_FBFatter
+        MENUITEM "横向缩小(&Thinner)",          ID_FBThinner
+        MENUITEM "绘制波形",                    ID_FBDrawCurve, CHECKED
+        MENUITEM "绘制初至",                    ID_FBDrawFbk, CHECKED
+        MENUITEM "&Check The FBK",              ID_Fbk_CheckFBK, CHECKED
+        MENUITEM "Area Changing Show",          ID_Fbk_AreaShow, CHECKED
+        MENUITEM "Draw Part Group",             ID_FstBrk_DrawPart, CHECKED
+    END
+    POPUP "特殊功能(&Special)"
+    BEGIN
+        MENUITEM "神经网络计算初至(&Calculate)", ID_FBCalculate
+        MENUITEM "神经网络学习(&Learn)",        ID_FBLearn
+        MENUITEM "相关法计算初至(Relatioive Calc)", ID_FB_RelativeCalc
+        MENUITEM "人机交互拾取初至(&Modify)",   ID_FB_Modify
+        MENUITEM "精细读取初至(&Precisely Read)", ID_FB_PreciseRead
+        MENUITEM "合并初至文件(Integrate)",     ID_IntegrateFstbrk
+    END
+    POPUP "视(&View)"
+    BEGIN
+        MENUITEM "工具条（&Toolbar）",          ID_VIEW_TOOLBAR
+        MENUITEM "状态条（&Status Bar）",       ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&Window)"
+    BEGIN
+        MENUITEM "新窗口(&New Window)",         ID_WINDOW_NEW
+        MENUITEM "层叠(&Cascade)",              ID_WINDOW_CASCADE
+        MENUITEM "平铺(&Tile)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&Arrange Icons)",    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "检索（&Index）",              ID_HELP_INDEX
+        MENUITEM "使用帮助（&Using Help）",     ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "关于本软件（&About 3dfstbrk...）", ID_APP_ABOUT
+    END
+END
+
+IDR_MenuStaticCorrection MENU DISCARDABLE 
+BEGIN
+    POPUP "文件 (&File)"
+    BEGIN
+        MENUITEM "新文件(&New) ",               ID_FILE_NEW
+        MENUITEM "打开文件(&Open)",             ID_FILE_OPEN
+        MENUITEM "关闭文件(&Close)",            ID_FILE_CLOSE
+        MENUITEM "存储(&Save)\tCtrl+S",         ID_FILE_SAVE
+        MENUITEM "另存为(Save &As...)",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&Print...)\tCtrl+P",     ID_FILE_PRINT
+        MENUITEM "打印预显(Print Pre&view)",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(P&rint Setup...)",   ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件(Recent File)",       ID_FILE_MRU_FILE1, GRAYED
+        POPUP "建立起始文件(Initiate)"
+        BEGIN
+            MENUITEM "由每行52字节文件转换(From text file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROM52CHARACTARTEXTFILE
+
+            MENUITEM "由.DBF文件转换(From .DBF file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROMDBFFILE
+
+        END
+        MENUITEM "建立上交文件(Hand up)",       ID_FILE_MAKETEXTFILE
+        MENUITEM "退出(E&xit)",                 ID_APP_EXIT
+    END
+    POPUP "显示方式(&Display)"
+    BEGIN
+        MENUITEM "纵向放大(Higher)",            ID_THigher
+        MENUITEM "纵向缩小(Lower)",             ID_TLower
+        MENUITEM "横向放大(Fatter)",            ID_TFatter
+        MENUITEM "横向缩小(Thinner)",           ID_TThinner
+    END
+    POPUP "挑选数据(&Choose)"
+    BEGIN
+        MENUITEM "挑选数据(Choose)",            ID_TChoose
+    END
+    POPUP "视(&View)"
+    BEGIN
+        MENUITEM "工具条（&Toolbar）",          ID_VIEW_TOOLBAR
+        MENUITEM "状态条（&Status Bar）",       ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&Window)"
+    BEGIN
+        MENUITEM "新窗口(&New Window)",         ID_WINDOW_NEW
+        MENUITEM "层叠(&Cascade)",              ID_WINDOW_CASCADE
+        MENUITEM "平铺(&Tile)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&Arrange Icons)",    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "检索（&Index）",              ID_HELP_INDEX
+        MENUITEM "使用帮助（&Using Help）",     ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "关于本软件（&About 3dfstbrk...）", ID_APP_ABOUT
+    END
+END
+
+IDR_MenuSPP MENU DISCARDABLE 
+BEGIN
+    POPUP "文件 (&File)"
+    BEGIN
+        MENUITEM "新文件(&New) ",               ID_FILE_NEW
+        MENUITEM "打开文件(&Open)",             ID_FILE_OPEN
+        MENUITEM "关闭文件(&Close)",            ID_FILE_CLOSE
+        MENUITEM "存储(&Save)\tCtrl+S",         ID_FILE_SAVE
+        MENUITEM "另存为(Save &As...)",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&Print...)\tCtrl+P",     ID_FILE_PRINT
+        MENUITEM "打印预显(Print Pre&view)",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(P&rint Setup...)",   ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件(Recent File)",       ID_FILE_MRU_FILE1, GRAYED
+        POPUP "建立起始文件(Initiate)"
+        BEGIN
+            MENUITEM "由每行52字节文件转换(From text file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROM52CHARACTARTEXTFILE
+
+            MENUITEM "由.DBF文件转换(From .DBF file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROMDBFFILE
+
+        END
+        MENUITEM "建立上交文件(Hand up)",       ID_FILE_MAKETEXTFILE
+        MENUITEM "退出(E&xit)",                 ID_APP_EXIT
+    END
+    POPUP "添加数据(&Plus)"
+    BEGIN
+        MENUITEM "添加文件号(&Plus File Number)", ID_SPP_PlusFileNumber
+        MENUITEM "添加空废炮(Plus &Skipped/Abandoned shot)", ID_SPP_PlusKF
+        MENUITEM "添加坐标(Plus &Coordinates)", ID_SPP_PlusCoor
+        MENUITEM "由单个参数文件合并炮点参数(&Integrate)", ID_SPPIntegrate
+    END
+    POPUP "视(&View)"
+    BEGIN
+        MENUITEM "工具条（&Toolbar）",          ID_VIEW_TOOLBAR
+        MENUITEM "状态条（&Status Bar）",       ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&Window)"
+    BEGIN
+        MENUITEM "新窗口(&New Window)",         ID_WINDOW_NEW
+        MENUITEM "层叠(&Cascade)",              ID_WINDOW_CASCADE
+        MENUITEM "平铺(&Tile)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&Arrange Icons)",    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "检索（&Index）",              ID_HELP_INDEX
+        MENUITEM "使用帮助（&Using Help）",     ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "关于本软件（&About 3dfstbrk...）", ID_APP_ABOUT
+    END
+END
+
+IDR_MenuP190 MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件 (&File)"
+    BEGIN
+        MENUITEM "新文件(&New) ",               ID_FILE_NEW
+        MENUITEM "打开文件(&Open)",             ID_FILE_OPEN
+        MENUITEM "关闭文件(&Close)",            ID_FILE_CLOSE
+        MENUITEM "存储(&Save)\tCtrl+S",         ID_FILE_SAVE
+        MENUITEM "另存为(Save &As...)",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&Print...)\tCtrl+P",     ID_FILE_PRINT
+        MENUITEM "打印预显(Print Pre&view)",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(P&rint Setup...)",   ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件(Recent File)",       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "退出(E&xit)",                 ID_APP_EXIT
+    END
+    POPUP "操作(Operation)"
+    BEGIN
+        MENUITEM "转换成本系统格式(Format Change)", ID_P190_FormatChange
+        MENUITEM "存储炮点静校正量文件(Save &Shot Static Value)", 
+                                                ID_P190_SaveShotStaticValue
+        MENUITEM "存储检波点静校正量文件(Save &Rcv Static Value)", 
+                                                ID_P190_SaveRcvStaticValue
+    END
+    POPUP "视(&View)"
+    BEGIN
+        MENUITEM "工具条（&Toolbar）",          ID_VIEW_TOOLBAR
+        MENUITEM "状态条（&Status Bar）",       ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&Window)"
+    BEGIN
+        MENUITEM "新窗口(&New Window)",         ID_WINDOW_NEW
+        MENUITEM "层叠(&Cascade)",              ID_WINDOW_CASCADE
+        MENUITEM "平铺(&Tile)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&Arrange Icons)",    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "检索（&Index）",              ID_HELP_INDEX
+        MENUITEM "使用帮助（&Using Help）",     ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "关于本软件（&About 3dfstbrk...）", ID_APP_ABOUT
+    END
+END
+
+IDR_TopoNet MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件 (&File)"
+    BEGIN
+        MENUITEM "新文件(&New) ",               ID_FILE_NEW
+        MENUITEM "打开文件(&Open)",             ID_FILE_OPEN
+        MENUITEM "关闭文件(&Close)",            ID_FILE_CLOSE
+        MENUITEM "存储(&Save)\tCtrl+S",         ID_FILE_SAVE
+        MENUITEM "另存为(Save &As...)",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&Print...)\tCtrl+P",     ID_FILE_PRINT
+        MENUITEM "打印预显(Print Pre&view)",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(P&rint Setup...)",   ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件(Recent File)",       ID_FILE_MRU_FILE1, GRAYED
+        POPUP "建立起始文件(Initiate)"
+        BEGIN
+            MENUITEM "由每行52字节文件转换(From text file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROM52CHARACTARTEXTFILE
+
+            MENUITEM "由.DBF文件转换(From .DBF file)", 
+                                                    ID_FILE_MAKEINITIATEFILE_FROMDBFFILE
+
+        END
+        MENUITEM "建立上交文件(Hand up)",       ID_FILE_MAKETEXTFILE
+        MENUITEM "退出(E&xit)",                 ID_APP_EXIT
+    END
+    POPUP "Test"
+    BEGIN
+        MENUITEM "Test  CTopoNet",              ID_Test_TopoNet
+    END
+    POPUP "窗口(&Window)"
+    BEGIN
+        MENUITEM "新窗口(&New Window)",         ID_WINDOW_NEW
+        MENUITEM "层叠(&Cascade)",              ID_WINDOW_CASCADE
+        MENUITEM "平铺(&Tile)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&Arrange Icons)",    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "检索（&Index）",              ID_HELP_INDEX
+        MENUITEM "使用帮助（&Using Help）",     ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "关于本软件（&About 3dfstbrk...）", ID_APP_ABOUT
+    END
+END
+
+IDR_MenuFbkPure MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件 (&File)"
+    BEGIN
+        MENUITEM "新文件(&New) ",               ID_FILE_NEW
+        MENUITEM "打开文件(&Open)",             ID_FILE_OPEN
+        MENUITEM "关闭文件(&Close)",            ID_FILE_CLOSE
+        MENUITEM "存储(&Save)\tCtrl+S",         ID_FILE_SAVE
+        MENUITEM "另存为(Save &As...)",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&Print...)\tCtrl+P",     ID_FILE_PRINT
+        MENUITEM "打印预显(Print Pre&view)",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(P&rint Setup...)",   ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件(Recent File)",       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "退出(E&xit)",                 ID_APP_EXIT
+    END
+    POPUP "操作(Operation)"
+    BEGIN
+        MENUITEM "&1 查找某文件号",             ID_FbkPure_FindFileNumber
+    END
+    POPUP "视(&View)"
+    BEGIN
+        MENUITEM "工具条（&Toolbar）",          ID_VIEW_TOOLBAR
+        MENUITEM "状态条（&Status Bar）",       ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&Window)"
+    BEGIN
+        MENUITEM "新窗口(&New Window)",         ID_WINDOW_NEW
+        MENUITEM "层叠(&Cascade)",              ID_WINDOW_CASCADE
+        MENUITEM "平铺(&Tile)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&Arrange Icons)",    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "检索（&Index）",              ID_HELP_INDEX
+        MENUITEM "使用帮助（&Using Help）",     ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "关于本软件（&About 3dfstbrk...）", ID_APP_ABOUT
+    END
+END
+
+IDR_Control MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件 (&File)"
+    BEGIN
+        MENUITEM "新文件(&New) ",               ID_FILE_NEW
+        MENUITEM "打开文件(&Open)",             ID_FILE_OPEN
+        MENUITEM "关闭文件(&Close)",            ID_FILE_CLOSE
+        MENUITEM "存储(&Save)\tCtrl+S",         ID_FILE_SAVE
+        MENUITEM "另存为(Save &As...)",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&Print...)\tCtrl+P",     ID_FILE_PRINT
+        MENUITEM "打印预显(Print Pre&view)",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(P&rint Setup...)",   ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件(Recent File)",       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "退出(E&xit)",                 ID_APP_EXIT
+    END
+    POPUP "操作(Operation)"
+    BEGIN
+        MENUITEM "&1 查找某文件号",             ID_FbkPure_FindFileNumber
+    END
+    POPUP "视(&View)"
+    BEGIN
+        MENUITEM "工具条（&Toolbar）",          ID_VIEW_TOOLBAR
+        MENUITEM "状态条（&Status Bar）",       ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&Window)"
+    BEGIN
+        MENUITEM "新窗口(&New Window)",         ID_WINDOW_NEW
+        MENUITEM "层叠(&Cascade)",              ID_WINDOW_CASCADE
+        MENUITEM "平铺(&Tile)",                 ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&Arrange Icons)",    ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&Help)"
+    BEGIN
+        MENUITEM "检索（&Index）",              ID_HELP_INDEX
+        MENUITEM "使用帮助（&Using Help）",     ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "关于本软件（&About 3dfstbrk...）", ID_APP_ABOUT
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "BGP\0"
+            VALUE "FileDescription", "3dfstbrk\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "3dfstbrk\0"
+            VALUE "LegalCopyright", "Copyright _ 1997\0"
+            VALUE "OriginalFilename", "3dfstbrk.exe\0"
+            VALUE "ProductName", "BGP 3dfstbrk\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MenuFirstBreak      BITMAP  DISCARDABLE     "res\\fstbrk.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+IDB_FrontCover          BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDR_MenuT               BITMAP  DISCARDABLE     "res\\checkt.bmp"
+IDR_MenuSPP             BITMAP  DISCARDABLE     "res\\menuspp.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\bitmap3.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\bitmap4.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\bitmap5.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\bitmap6.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\bitmap7.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\bitmap8.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MenuFirstBreak ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_NEXT,        ID_FBNextPage,          VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_FBLastPage,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MenuFirstBreak TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDM_LastPage
+    BUTTON      IDM_NextPage
+    BUTTON      IDM_SearchPage
+    BUTTON      ID_FBFatter
+    BUTTON      ID_FBThinner
+    BUTTON      IDM_FirstPage
+    BUTTON      IDM_EndPage
+    BUTTON      IDM_Learn
+    BUTTON      IDM_Calculate
+END
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_PARAMETER_SURVEYSYSTEM
+    BUTTON      ID_PARAMETER_PARAMETEROFONESWATH
+    BUTTON      IDM_UnformFileDeal
+    BUTTON      ID_MainCheckT
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_MenuT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_TChoose
+END
+
+IDR_MenuSPP TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_SPPIntegrate
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\FHSOFT.ICO"
+IDR_MenuFstBrk          ICON    DISCARDABLE     "res\\icon1.ico"
+IDR_MenuStaticCorrection ICON    DISCARDABLE     "res\\MenuT.ico"
+IDR_MenuSPP             ICON    DISCARDABLE     "res\\MenuSPP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CheckT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_AppendData, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_DialogRelation, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 181
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 136
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_NextPage            "Goto next page"
+    IDM_FirstPage           "go to the first page"
+    IDM_EndPage             "go to the end page"
+    IDM_SearchPage          "search for a page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PARAMETER_SURVEYSYSTEM "输入整个工区的观测系统参数"
+    ID_PARAMETER_PARAMETEROFONESWATH "Input the parameter of one swath"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FBClose              "退出初至修改"
+    IDB_LastPage            "Go to last page"
+    IDM_Learn               "让神经网络学习，必须用Shift(或Ctrl)键选取学习道"
+    IDM_Calculate           "让神经网络计算初至"
+    ID_FBDrawCurve          "当检查初至时绘制波形"
+    ID_FBDrawFbk            "当检查初至时绘制初至"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MainCheckT           "Compare the static correction data calculated by diffrent ways."
+    ID_TChoose              "Choose new data to be drawn out"
+    ID_FirstBreakSimulate   "Simulate first break according to the static value given."
+    IDM_UnformFileDeal      "Deal with the unform file and read first break."
+    ID_Fbk_CheckFBK         "Turn on/off checking FBK state/nTurn on/off checking FBK state"
+    ID_Fbk_AreaShow         "Show the groups wave according to area changing method\nShow the groups wave according to area changing method"
+    ID_FstBrkCheck          "Check the first break file/nCheck the first break file"
+    ID_FstBrk_DrawPart      "Draw the part that is beside the first break of the group\nDraw the part that is beside the first break of the group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Make new file"
+    ID_FILE_OPEN            "Open an existing file"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_Equation_MakeNet     "Make topography net for long wave control/nMake topography net for long wave control"
+    ID_Equation_ControlByNet 
+                            "Control the middling output by the net/nControl the middling output by the net"
+    ID_Output_Integrate     "Append the output data with the other kind of data"
+    ID_Output_Append        "Append the output data with the other kind of data/nAppend the output data with the other kind of data"
+    ID_FB_PreciseRead       "在神经网络读取的初至基础上，精细读取。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          IDM_EndModify,          VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_AFX                 ICON    DISCARDABLE     "RES\\3DFSTBRK.ICO"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""res\\3dfstbrk.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  \t// Standard components\r\n"
+    "#include ""afxprint.rc""\t// printing/print preview resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "3DFSTBRK\n3DFSTBRK\n3DFSTBRK\n\n\n\nTopography Net"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "3DFSTBRK Version 1.0"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document"
+    ID_FILE_OPEN            "Open an existing document"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active document"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+    ID_FILE_PAGE_SETUP      "Change the printing options"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the active document"
+    ID_FILE_PRINT_PREVIEW   "Display full pages"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+    ID_HELP_INDEX           "List Help topics"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane"
+    ID_PREV_PANE            "Switch back to the previous window pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+    ID_EDIT_REDO            "Redo the previously undone action"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LastPage             "到上一页"
+    ID_NextPage             "到下一页"
+    ID_EQUATION_DEALEQUATION 
+                            "Deal with the equation your have made. You must do this before resolve the equation."
+    ID_FIRSTBREAK_CALCULATE "Calcuate First Break of any shots of any swath"
+    ID_FIRSTBREAK_MANUALMODIFY 
+                            "when modifying, can let neural_net calculate,learn."
+    ID_PARAMETER_SURVEYSYSTEM 
+                            "Input parameters of  the survey system of the work area."
+    ID_PARAMETER_PARAMETEROFONESWATH "input parameters of any one swath"
+    ID_FILE_PRAPAREINITIATEVALUE 
+                            "Make initiate file of static value from static value file of text format"
+    ID_FILE_MAKETEXTFILE    "Make static value file of text format from the output of this program."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EQUATION_RESOLVEEQUATION 
+                            "Resolve the equation you have made, the output is a two binary file , you should make text format files according them."
+    ID_EQUATION_LONGWAVECONTROL 
+                            "Control the output of this program by long wave static static value."
+    ID_FILE_MAKEINITIATEFILE 
+                            "Make shot & recieve point static value initiate file according other file format"
+    ID_FILE_MAKEINITIATEFILE_FROM52CHARACTARTEXTFILE 
+                            "from the common static file format that with 52 charactars on one row"
+    ID_FILE_MAKEINITIATEFILE_FROMDBFFILE 
+                            "from common dbase format file of the 52 charactar text file."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MenuFstBrk          "Unformed File \nUnformed File\nUnformed File\nUnformed File(*.JB)\n.JB\nUnformed.Document\nUnformed File"
+    IDR_MenuStaticCorrection 
+                            "Static Correction File\nStatic Correction Data\nStatic Correction Data \nStatic Correction File(*.ST)\n.ST\nStatic.Document\nStatic Correction Data"
+    IDR_MenuSPP             "Shot Point Parameter File \nShot Point Parameter\nShot Point Parameter File\nShot Point Parameter File(*.SPP)\n.SPP\nShotParameter.Document\nShot Point Parameter File"
+    IDR_MenuP190            "P190 File \nP190File\nP190 File \nP190 File (*.SRS)\n.SRS\nP190.Document\nP190 File"
+    IDR_TopoNet             "Topography Net \nTopography Net\nTopography Net\nTopography Net(*.net)\n.net\nTopography Net.Document\nTopography Net"
+    IDR_MenuFbkPure         "First Break\nFirst Break\nFirst Break\nFirst Break(*.fbk)\n.fbk\nFirst Break.Document\nFirst Break"
+    IDR_Control             "Control File \nControl File \nControl File \nControl File (*.CTL)\n.CTL\nControl File \nControl File "
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\3dfstbrk.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  	// Standard components
+#include "afxprint.rc"	// printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

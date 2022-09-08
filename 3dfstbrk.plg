@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 3dfstbrk - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR".\Debug/" /Fp".\Debug/3dfstbrk.pch" /YX /Fo".\Debug/" /Fd".\Debug/" /FD /c 
+"D:\projects\newfbm\3dfstbrk.cpp"
+"D:\projects\newfbm\ControlView.cpp"
+"D:\projects\newfbm\SPPView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2C.tmp" with contents
+[
+oldnames.lib winmm.lib ZoomView.lib zoomview.lib /nologo /stack:0x2800 /subsystem:windows /incremental:yes /pdb:".\Debug/3dfstbrk.pdb" /debug /machine:IX86 /def:".\3dfstbrk.def" /out:".\Debug/3dfstbrk.exe" 
+.\Debug\3dfstbrk.obj
+.\Debug\Askgroup.obj
+.\Debug\Cdswpar.obj
+.\Debug\CheckT.obj
+.\Debug\ChildFrm.obj
+.\Debug\ColorDlg.obj
+.\Debug\ControlDoc.obj
+.\Debug\ControlFile.obj
+.\Debug\ControlView.obj
+.\Debug\DlgAppeData.obj
+.\Debug\DlgFbkShow.obj
+.\Debug\DlgPlusCoor.obj
+.\Debug\DlgRelation.obj
+.\Debug\Dpgnum.obj
+.\Debug\Drlispi.obj
+.\Debug\Drlnspn.obj
+.\Debug\Dsvsys.obj
+.\Debug\Dswnum.obj
+.\Debug\Equation.obj
+.\Debug\fbk.obj
+.\Debug\FbkDoc.obj
+.\Debug\FbkInFile.obj
+.\Debug\FbkPureDoc.obj
+.\Debug\FbkPureView.obj
+.\Debug\FbkView.obj
+.\Debug\Fh.obj
+.\Debug\Fileface.obj
+.\Debug\FontGroup.obj
+.\Debug\FrtCvr.obj
+.\Debug\InP190.obj
+.\Debug\Line.obj
+.\Debug\LWCtl.obj
+.\Debug\Mainfrm.obj
+.\Debug\Makeequa.obj
+.\Debug\Memequa.obj
+.\Debug\MidFbkFile.obj
+.\Debug\My3DPoint.obj
+.\Debug\Mylist.obj
+.\Debug\MyPrcPoint.obj
+.\Debug\Neunet.obj
+.\Debug\OutFbkFile.obj
+.\Debug\P190.obj
+.\Debug\P190Doc.obj
+.\Debug\P190View.obj
+.\Debug\posvalue.obj
+.\Debug\ProDlg.obj
+.\Debug\Progdlg.obj
+.\Debug\Relation.obj
+.\Debug\sndfile.obj
+.\Debug\SPPDoc.obj
+.\Debug\Sppmaker.obj
+.\Debug\SPPView.obj
+.\Debug\Stdafx.obj
+.\Debug\Svsys.obj
+.\Debug\Swathpar.obj
+.\Debug\TagLine.obj
+.\Debug\TDoc.obj
+.\Debug\testDoc.obj
+.\Debug\testView.obj
+.\Debug\TopoNet.obj
+.\Debug\TopoNetDoc.obj
+.\Debug\TopoNetView.obj
+.\Debug\TView.obj
+.\Debug\Unform.obj
+.\Debug\ValueFbk.obj
+.\Debug\ZDEquation.obj
+.\Debug\3dfstbrk.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2C.tmp"
+<h3>Output Window</h3>
+Compiling...
+3dfstbrk.cpp
+d:\projects\newfbm\p190.h(24) : warning C4244: '=' : conversion from 'const double' to 'int', possible loss of data
+d:\projects\newfbm\p190.h(24) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+d:\projects\newfbm\p190.h(24) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+d:\projects\newfbm\p190.h(51) : warning C4244: '=' : conversion from 'const double' to 'int', possible loss of data
+d:\projects\newfbm\p190.h(51) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+d:\projects\newfbm\p190.h(51) : warning C4244: '=' : conversion from 'double' to 'long', possible loss of data
+ControlView.cpp
+SPPView.cpp
+Linking...
+LINK : LNK6004: .\Debug/3dfstbrk.exe not found or not built by the last incremental link; performing full link
+.\3dfstbrk.def : warning LNK4017: EXETYPE statement not supported for the target platform; ignored
+.\3dfstbrk.def : warning LNK4017: CODE statement not supported for the target platform; ignored
+.\3dfstbrk.def : warning LNK4017: DATA statement not supported for the target platform; ignored
+   Creating library .\Debug/3dfstbrk.lib and object .\Debug/3dfstbrk.exp
+
+
+
+<h3>Results</h3>
+3dfstbrk.exe - 0 error(s), 9 warning(s)
+</pre>
+</body>
+</html>

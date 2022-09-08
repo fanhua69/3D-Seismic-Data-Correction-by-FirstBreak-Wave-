@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{7124B760-AFCF-490F-A1F0-564DA4E2E2E8}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\3dfstbrk.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\3dfstbrk.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\3dfstbrk.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\3dfstbrk.exe</OutputFile>
+      <AdditionalDependencies>oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10240</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\3dfstbrk.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\3dfstbrk.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\3dfstbrk.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\3dfstbrk.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>.\Debug\3dfstbrk.exe</OutputFile>
+      <AdditionalDependencies>oldnames.lib;winmm.lib;ZoomView.lib;zoomview.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>10240</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\3dfstbrk.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="3dfstbrk.cpp" />
+    <ClCompile Include="Askgroup.cpp" />
+    <ClCompile Include="Cdswpar.cpp" />
+    <ClCompile Include="CheckT.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ColorDlg.cpp" />
+    <ClCompile Include="ControlDoc.cpp" />
+    <ClCompile Include="ControlFile.cpp" />
+    <ClCompile Include="ControlView.cpp" />
+    <ClCompile Include="DlgAppeData.cpp" />
+    <ClCompile Include="DlgFbkShow.cpp" />
+    <ClCompile Include="DlgPlusCoor.cpp" />
+    <ClCompile Include="DlgRelation.cpp" />
+    <ClCompile Include="Dpgnum.cpp" />
+    <ClCompile Include="Drlispi.cpp" />
+    <ClCompile Include="Drlnspn.cpp" />
+    <ClCompile Include="Dsvsys.cpp" />
+    <ClCompile Include="Dswnum.cpp" />
+    <ClCompile Include="Equation.cpp" />
+    <ClCompile Include="fbk.cpp" />
+    <ClCompile Include="FbkDoc.cpp" />
+    <ClCompile Include="FbkInFile.cpp" />
+    <ClCompile Include="FbkPureDoc.cpp" />
+    <ClCompile Include="FbkPureView.cpp" />
+    <ClCompile Include="FbkView.cpp" />
+    <ClCompile Include="Fh.cpp" />
+    <ClCompile Include="Fileface.cpp" />
+    <ClCompile Include="FontGroup.cpp" />
+    <ClCompile Include="FrtCvr.cpp" />
+    <ClCompile Include="InP190.cpp" />
+    <ClCompile Include="Line.cpp" />
+    <ClCompile Include="LWCtl.cpp" />
+    <ClCompile Include="Mainfrm.cpp" />
+    <ClCompile Include="Makeequa.cpp" />
+    <ClCompile Include="Memequa.cpp" />
+    <ClCompile Include="MidFbkFile.cpp" />
+    <ClCompile Include="My3DPoint.cpp" />
+    <ClCompile Include="Mylist.cpp" />
+    <ClCompile Include="MyPrcPoint.cpp" />
+    <ClCompile Include="Neunet.cpp" />
+    <ClCompile Include="OutFbkFile.cpp" />
+    <ClCompile Include="P190.cpp" />
+    <ClCompile Include="P190Doc.cpp" />
+    <ClCompile Include="P190View.cpp" />
+    <ClCompile Include="posvalue.cpp" />
+    <ClCompile Include="ProDlg.cpp" />
+    <ClCompile Include="Progdlg.cpp" />
+    <ClCompile Include="Relation.cpp" />
+    <ClCompile Include="sndfile.cpp" />
+    <ClCompile Include="SPPDoc.cpp" />
+    <ClCompile Include="Sppmaker.cpp" />
+    <ClCompile Include="SPPView.cpp" />
+    <ClCompile Include="Stdafx.cpp" />
+    <ClCompile Include="Svsys.cpp" />
+    <ClCompile Include="Swathpar.cpp" />
+    <ClCompile Include="TagLine.cpp" />
+    <ClCompile Include="TDoc.cpp" />
+    <ClCompile Include="testDoc.cpp" />
+    <ClCompile Include="testView.cpp" />
+    <ClCompile Include="TopoNet.cpp" />
+    <ClCompile Include="TopoNetDoc.cpp" />
+    <ClCompile Include="TopoNetView.cpp" />
+    <ClCompile Include="TView.cpp" />
+    <ClCompile Include="Unform.cpp" />
+    <ClCompile Include="ValueFbk.cpp" />
+    <ClCompile Include="ZDEquation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="3dfstbrk.def" />
+    <CustomBuild Include="res\3dfstbrk.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="3dfstbrk.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3dfstbrk.h" />
+    <ClInclude Include="AskGroup.h" />
+    <ClInclude Include="BlockTrace.h" />
+    <ClInclude Include="cdswpar.h" />
+    <ClInclude Include="CheckT.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ColorDlg.h" />
+    <ClInclude Include="ControlDoc.h" />
+    <ClInclude Include="ControlFile.h" />
+    <ClInclude Include="ControlView.h" />
+    <ClInclude Include="DlgAppeData.h" />
+    <ClInclude Include="DlgFbkShow.h" />
+    <ClInclude Include="DlgPlusCoor.h" />
+    <ClInclude Include="DlgRelation.h" />
+    <ClInclude Include="Dpgnum.h" />
+    <ClInclude Include="Drlispi.h" />
+    <ClInclude Include="Drlnspn.h" />
+    <ClInclude Include="Dsvsys.h" />
+    <ClInclude Include="Dswnum.h" />
+    <ClInclude Include="Equation.h" />
+    <ClInclude Include="fbk.h" />
+    <ClInclude Include="FbkDoc.h" />
+    <ClInclude Include="FbkInFile.h" />
+    <ClInclude Include="FbkPureDoc.h" />
+    <ClInclude Include="FbkPureView.h" />
+    <ClInclude Include="FbkView.h" />
+    <ClInclude Include="fh.h" />
+    <ClInclude Include="FileFace.h" />
+    <ClInclude Include="FontGroup.h" />
+    <ClInclude Include="FrtCvr.h" />
+    <ClInclude Include="InP190.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="LWCtl.h" />
+    <ClInclude Include="Mainfrm.h" />
+    <ClInclude Include="Makeequa.h" />
+    <ClInclude Include="Memequa.h" />
+    <ClInclude Include="MidFbkFile.h" />
+    <ClInclude Include="My3DPoint.h" />
+    <ClInclude Include="Mylist.h" />
+    <ClInclude Include="Mypoint.h" />
+    <ClInclude Include="MyPrcPoint.h" />
+    <ClInclude Include="neunet.h" />
+    <ClInclude Include="OutFbkFile.h" />
+    <ClInclude Include="P190.h" />
+    <ClInclude Include="P190Doc.h" />
+    <ClInclude Include="P190View.h" />
+    <ClInclude Include="posvalue.h" />
+    <ClInclude Include="ProDlg.h" />
+    <ClInclude Include="ProgDlg.h" />
+    <ClInclude Include="pxyv.h" />
+    <ClInclude Include="RcvPoint.h" />
+    <ClInclude Include="Relation.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="shotmsg.h" />
+    <ClInclude Include="sndfile.h" />
+    <ClInclude Include="Spp.h" />
+    <ClInclude Include="SPPDoc.h" />
+    <ClInclude Include="SPPMaker.h" />
+    <ClInclude Include="SPPView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="Svsys.h" />
+    <ClInclude Include="Swathpar.h" />
+    <ClInclude Include="TagLine.h" />
+    <ClInclude Include="TDoc.h" />
+    <ClInclude Include="testDoc.h" />
+    <ClInclude Include="testView.h" />
+    <ClInclude Include="TopoNet.h" />
+    <ClInclude Include="TopoNetDoc.h" />
+    <ClInclude Include="TopoNetView.h" />
+    <ClInclude Include="TView.h" />
+    <ClInclude Include="Unform.h" />
+    <ClInclude Include="ValueFbk.h" />
+    <ClInclude Include="ZDEquation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\3dfstbrk.ico" />
+    <Image Include="Res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\bitmap3.bmp" />
+    <Image Include="res\bitmap4.bmp" />
+    <Image Include="res\bitmap5.bmp" />
+    <Image Include="res\bitmap6.bmp" />
+    <Image Include="res\bitmap7.bmp" />
+    <Image Include="res\bitmap8.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="Res\checkt.bmp" />
+    <Image Include="res\Fhsoft.ico" />
+    <Image Include="res\Fstbrk.bmp" />
+    <Image Include="Res\icon1.ico" />
+    <Image Include="res\mainfram.bmp" />
+    <Image Include="Res\menuspp.bmp" />
+    <Image Include="Res\MenuSPP.ico" />
+    <Image Include="Res\MenuT.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Limit.txt" />
+    <Text Include="ProNote.txt" />
+    <Text Include="Repair.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
